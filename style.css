@@ -1,0 +1,68 @@
+body{
+    position: relative;
+    background:#FFFFFF;
+}
+
+#canvas {
+    display: block;
+}
+
+#Reset{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+
+#Reset:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+#modal-content{
+	z-index:2;
+	display:none;
+    position: fixed;
+    margin: auto;
+    background-color:rgba(255,255,255,0);
+}
+#modal-content p {
+  font-family: 'FB Condor Bold', sans-serif;
+  font-size: 100px;
+  letter-spacing: 0.2em;
+  padding: 10px 0;
+  -moz-transform: skew(-25deg) rotate(5deg);
+  -ms-transform: skew(-25deg) rotate(5deg);
+  -webkit-transform: skew(-25deg) rotate(5deg);
+  transform: skew(-25deg) rotate(5deg);
+  color: #19a0ee;
+  text-shadow:
+    0 1px #0096ec,
+    1px 0 #0087d4,
+    1px 2px #0096ec,
+    2px 1px #0087d4,
+    2px 3px #0096ec,
+    3px 2px #0087d4,
+    3px 4px #0096ec,
+    4px 3px #0087d4,
+    4px 5px #0096ec,
+    5px 6px #0087d4,
+    6px 7px 5px #0096ec;
+  -webkit-text-stroke: 0.5px #68c8ff;
+}
+
+#modal-overlay{
+	z-index:1;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:120%;
+	background-color:rgba(0,0,0,0.75);
+}
